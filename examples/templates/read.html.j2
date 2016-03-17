@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"
+      class="width-medium font-sentinel mode-day size-medium js no-touch backgroundsize boxshadow opacity cssanimations cssgradients csstransforms csstransitions formvalidation"
+      dir="ltr">
+<head>
+    <link rel="stylesheet" href="https://d370mdr42phnax.cloudfront.net/8dc896/css/article.css">
+    <link rel="stylesheet" href="https://d370mdr42phnax.cloudfront.net/8dc896/css/article-print.css" media="print">
+    <style>
+        form input,
+        form button {
+            font-size: 1em;
+            line-height: 1.75;
+        }
+        form input {
+            width: 85%;
+            float: left;
+        }
+        form button {
+            border: 1px solid #666;
+            padding-left: 1em;
+            padding-right: 1em;
+            float: right;
+        }
+        form {
+            margin-bottom: 1em;
+            text-align: center;
+            display: block;
+        }
+        form::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .width-medium article.hentry + article.hentry {
+            padding: 1em;
+            border: 1px solid #eee;
+            background-color: white;
+        }
+    </style>
+
+    <base href="{{ url }}" target="_blank">
+</head>
+<body class=article>
+<div class=container>
+    <article class=hentry>
+        <form method="post" action="">
+            <input type="text" name="url" value="{{ url }}"/>
+            <button type="submit">go</button>
+        </form>
+    </article>
+    <article class=hentry>
+        <header role="banner">
+            <h1 class="entry-title">{{ title }}</h1>
+        </header>
+        <section role=main>
+            <div class=entry-content>{{ article }}</div>
+        </section>
+    </article>
+</div>
+</body>
+</html>

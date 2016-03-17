@@ -1,0 +1,4 @@
+-e git+https://github.com/hartym/rdc.common.git@master#egg=rdc.common
+-e git+https://github.com/hartym/rdc.etl.git@py3k#egg=rdc.etl
+
+-e .

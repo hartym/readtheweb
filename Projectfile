@@ -21,6 +21,7 @@ enable_features = {
 
 install_requires = [
     'blessings >=1.6,<1.7',
+    'CacheControl[filecache] >=0.11,<0.12',
     'cerberus >=0.9,<0.10',
     'certifi==2015.04.28',
     'edgy.event >=0.1.5,<0.2',
@@ -32,6 +33,7 @@ install_requires = [
     'requests-futures',
     'requests[security]',
     'simplejson >=3.8,<3.9',
+    'urlnorm >=1.1,<1.2',
 ]
 
 extras_require = {
